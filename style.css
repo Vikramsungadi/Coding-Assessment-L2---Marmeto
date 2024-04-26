@@ -78,6 +78,9 @@ body {
 	border: 1px solid transparent;
 	transition: background-color 0.2s ease-in-out;
 }
+.primary-btn:active {
+	scale: 0.99;
+}
 .primary-btn:hover {
 	background-color: var(--secondary);
 	color: var(--primary);

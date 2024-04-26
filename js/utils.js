@@ -36,13 +36,11 @@ export function capitalize(word) {
 export function changeFavicon(url) {
 	let favicon = document.querySelector('link[rel="icon"]');
 
-	// If favicon element doesn't exist, create it
 	if (!favicon) {
 		favicon = document.createElement('link');
 		favicon.rel = 'icon';
 		document.head.appendChild(favicon);
 	}
 
-	// Set the href attribute to the new favicon URL
 	favicon.href = url;
 }

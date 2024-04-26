@@ -5,7 +5,6 @@ export async function fetchProducts() {
 		products = await res.json();
 	} catch {
 		isLoading = false;
-		ErrorPage();
 	}
 
 	return products.categories;

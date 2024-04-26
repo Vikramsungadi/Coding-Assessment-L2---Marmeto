@@ -1,4 +1,4 @@
-import { productCard, loader, ErrorPage } from './ui.js';
+import { productCard, loader } from './ui.js';
 import { fetchProducts } from './service.js';
 import { capitalize, changeFavicon } from './utils.js';
 let isLoading = true;
@@ -19,7 +19,6 @@ async function getProductsByCategory(category) {
 		}
 	} catch {
 		isLoading = false;
-		ErrorPage();
 	}
 }
 

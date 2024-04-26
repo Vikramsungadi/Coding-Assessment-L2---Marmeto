@@ -46,16 +46,3 @@ export function loader() {
 		[createElem('span', { class: 'loader' }, '')]
 	);
 }
-
-export function ErrorPage() {
-	let relaodButton = createElem('button', { class: 'primary-btn' }, 'Reload');
-	// relaodButton.onClick = () => window.location.reload();
-	return createElem(
-		'div',
-		{
-			style: 'height:50vh; display:flex; margin-inline:auto; align-items:center; justify-content-center;',
-		},
-		'',
-		[createElem('span', { style: 'font-size:32px;font-weight:600' }, 'Error'), relaodButton]
-	);
-}
